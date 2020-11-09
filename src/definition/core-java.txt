@@ -94,7 +94,7 @@ What is OOP ? Define each feature of java OOP.
 
 What is Java Package and which package is imported by default?
     Java package is a collection of java interfaces and classes.
-    The package that is impoted by default is java.lang
+    The package that is improted by default is java.lang
 
 What is API? Name list of API that you have used so far.
     Application Programming Interface (API) is the code that permit that 2 application can interact between each other.
@@ -109,41 +109,197 @@ Does java support multiple inheritance, explain why or why not?
     Yes Java support multiple inheritance. It gives the ability that one class can implement more than one interface.
 
 What is method overloading and when it happens?
+    Overloading is way to use the same methods from another class.
+
+
 Explain exceptions in java and how to handle it.
+    Exception in Java is an unexpected event which happen during a code execution. This stops the normal execution of a
+    program.
+    The exception is handled by try, catch, throw, throws and finally. Meaning that you can ignore the exception by throw
+    or if you want to catch it you use try catch.
+
+
 What is static keyword in java? How it has been used in variables and methods ?
+    Static is used for class, methods and variables. It allows to share this class class or variables within the
+    class.
+
 What is final and how it has been used variables and methods?
+    Final is non access modifier applicable only to a variable, a method or a class.
+    When a variable is declared with final keyword, its value can’t be modified, essentially, a constant.
+    This also means that you must initialize a final variable. If the final variable is a reference, this means
+    that the variable cannot be re-bound to reference another object, but internal state of the object pointed
+    by that reference variable can be changed
+
+
 What is final, finally and finalize?
+    -The final keyword can be used with class method and variable. A final class cannot be instantiated,
+     a final method cannot be overridden and a final variable cannot be reassigned.
+    -The finally keyword is used to create a block of code that follows a try block. A finally block of code
+     always executes, whether or not an exception has occurred. Using a finally block allows you to run any
+     cleanup-type statements that you just wish to execute, despite what happens within the protected code.
+    -The finalize() method is used just before object is destroyed and can be called just prior to object creation.
+
+
 What is a constructor ?
+    Constructor is a block of code that initializes the newly created object.
+
 Can we have multiple constructors in a class?
+    Yes
+
 If we don't have a constructor declared, what is called during the object creation?
+    If there is no constructor, the java compiler automatically provides a no-argument constructor,
+    called the default constructor.
+
 What is "this" keyword in java ?
+    The this keyword refers to the current object in a method or constructor.
+
+
 What is "super" keyword in java? How many possible way can you use?
+    The super keyword in java is a reference variable that is used to refer parent class objects.
+    The keyword “super” came into the picture with the concept of Inheritance
+
 What is JVM stand for ?
+    JVM stand for Java Runtime Machine
+
 Is JVM platform independent?
+    The JVM must be platform dependent to allow your Java to run on the specific platform.
+
 What version of java are you using?
+    java version "11.0.8" 2020-07-14 LTS
+    Java(TM) SE Runtime Environment 18.9 (build 11.0.8+10-LTS)
+    Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.8+10-LTS, mixed mode)
+
 What is JAR stand for ?
+    It stand for Java ARchive.
+
 What is the difference between JDK and JVM?
+    JDK is Java Development Kit and JVM is Java Virtual Machine. JDK contains JVM and whole other tools for java
+    development inside it. JVM converts bytecode to machine code and execute it on machine. There is no matching
+    functionality between JDK and JVM
+
+
 What is the difference between JVM and JRE?
+    *JRE – Java Runtime Environment (to say JRE) is an installation package which provides environment to only
+    run(not develop) the java program(or application)onto your machine. JRE is only used by them who only wants
+     to run the Java Programs i.e. end users of your system.
+    *JVM – Java Virtual machine(JVM) is a very important part of both JDK and JRE because it is contained or inbuilt
+    in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the
+    java program line by line hence it is also known as interpreter.
+
 What is compile time and run time?
+    Compile time is when the program is compiled; runtime is when it executes (on either a physical or virtual
+    computer). Programmers use the term static to refer to anything that is created during compile time and stays
+    fixed during the program run.
+
 What is heap?
+    The Java heap is the area of memory used to store objects instantiated by applications running on the JVM.
+    Objects in the heap can be shared between threads. Many users restrict the Java heap size to 2-8 GB in
+    order to minimize garbage collection pauses.
+
 How java manage it's memory?
+    In Java, memory management is the process of allocation and de-allocation of objects, called Memory management.
+     Java does memory management automatically. Java uses an automatic memory management system called a garbage
+     collector. Thus, we are not required to implement memory management logic in our application.
+
+
 What is the difference between String, StringBuffer and StringBuilder?
+    *String is immutable ( once created can not be changed )object . The object created as a
+     String is stored in the Constant String Pool.
+    *StringBuffer is mutable means one can change the value of the object . The object created
+      through StringBuffer is stored in the heap
+    *StringBuilder is same as the StringBuffer , that is it stores the object in heap and it can also
+     be modified . The main difference between the StringBuffer and StringBuilder is
+     that StringBuilder is also not thread safe.
+
 What is Singleton class?
+    a singleton class is a class that can have only one object (an instance of the class) at a time.
+    After first time, if we try to instantiate the Singleton class, the new variable also points to the first
+    instance created. So whatever modifications we do to any variable inside the class through any instance,
+    it affects the variable of the single instance created and is visible if we access that variable through
+    any variable of that class type defined.
+
+
 What is Serialization and Deserialization?
+    Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is
+    the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism
+    is used to persist the object.
+
 when to use transient variable in java?
+    The transient keyword in Java is used to avoid serialization. If any object of a data structure is defined as
+    a transient, then it will not be serialized.
+
+
 Difference between while and do..while loop?
+    A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean
+    condition. The while loop can be thought of as a repeating if statement.
+    do while loop is similar to while loop with the only difference that it checks for the condition after executing
+    the statements, and therefore is an example of Exit Control Loop.
+
 What is Enum?
+    An enum is a special "class" that represents a group of constants (unchangeable variables, like final variables).
+    To create an enum, use the enum keyword (instead of class or interface), and separate the constants with a comma.
+    Note that they should be in uppercase letters:
+
+
 What is Iterator?
+    It is a interface used to get elements of legacy collections(Vector, Hashtable).
+
+
 Which one will take more memory, an int or Integer?
+    Integer will take more memory (16bytes). int takes 4 bytes
+
 Why is String Immutable in Java?
+    String is a final and immutable class, which makes it the most special. It cannot be inherited, and once created,
+    we can not alter the object.
+
 What is constructor chaining in Java?
+    Constructor chaining is the process of calling one constructor from another constructor with respect to current
+    object. Constructor chaining can be done in two ways:
+
+    Within same class: It can be done using this() keyword for constructors in same class
+    From base class: by using super() keyword to call constructor from the base class.
+
+
 The difference between Serial and Parallel Garbage Collector?
+    Even though both the serial and parallel collectors cause a stop-the-world pause during Garbage collection.
+    The main difference between them is that a serial collector is a default copying collector which uses only one
+    GC thread for garbage collection while a parallel collector uses multiple GC threads for garbage collection.
+
+
 What is JIT stands for?
+       JIT stands for Just In Time
+
 Explain Java Heap space and Garbage collection?
+    Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase
+     or decrease in size while the application runs. When the heap becomes full, garbage is collected. During
+     the garbage collection objects that are no longer used are cleared, thus making space for new objects.
+
 Can you guarantee the garbage collection process?
+    Being an automatic process, programmers need not initiate the garbage collection process explicitly in the code.
+    It can choose to reject the request and so it is not guaranteed that these calls will do the garbage
+    collection. This decision is taken by the JVM based on the eden space availability in heap memory.
+
 What is the difference between stack and heap in Java?
+    *Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of
+     execution.
+    *Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference
+     to it. Stack memory only contains local primitive variables and reference variables to objects in heap space.
+    *Objects stored in the heap are globally accessible whereas stack memory can’t be accessed by other threads.
+    *Stack memory is short-lived whereas heap memory lives from the start till the end of application execution.
+    *Stack memory size is very less when compared to Heap memory. Because of simplicity in memory allocation (LIFO),
+     stack memory is very fast when compared to heap memory.
+
+
 What is reflection in java and why is it useful?
+    In Java, reflection allows us to inspect and manipulate classes, interfaces, constructors, methods, and fields
+    at run time. There is a class in Java named Class that keeps all the information about objects and classes at
+     runtime. The object of Class can be used to perform reflection.
+
 what is multithreading in java?
+    Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum
+    utilization of CPU. Each part of such program is called a thread. So, threads are light-weight processes within
+    a process.
+
 What is the use of synchronization in Java?
 What is Framework?
 What are the testing Framework available in java?
