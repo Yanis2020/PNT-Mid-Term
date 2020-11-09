@@ -1,25 +1,113 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-Ans :
+Ans : Programing language is language that is used on a computer to create programs, softwares scripts and
+ applications.
 
 What jdk contains or composed of and define each components?
+jdk is a software development package.
+         -JRE: Java Runtime Environment
+         -Java: It’s the loader that works for all the java applications
+         -javac: It’s a compiler. It converts source code into Java bytecode
+         -appletviewer: Without using  a web browser, we can run the Java applets and even debug them.
+         -apt: This is used as an annotation-processing tool
+         -extcheck: For identifying the conflicts, this next check is used
+         -idlj: An IDL-to-Java compiler
+         -jabswitch: It is a Java Access Bridge
+         -javadoc: It is a documentation generator, which produces documentation from source code comments, automatically
+         -jar: It is an archiver.
+         -javafxpackager: It is a tool to attain packages and sign JavaFX applications
+         -jarsigner: It’s a verification and jar signing tool
+         -javah: It’s a stub generator and ‘C’ header that is used for writing built-in methods
+         -javap: It’s a class file disassembler
+         -javaws: It’s a Java Web Start launcher for JNLP applications
+         -JConsole: It’s a Console used for Java Monitoring and Management
+         -jdb: It’s a debugger
+         -jinfo:to get the configuration information from a running Java process
+         -jmap:This gives the result of the memory map for Java
+         -jmc: It’s known as a Java Mission Control
+         -jps: it’s a JVM Process, Status Tool
+         -jrunscript: It’s a Java command-line script shell
+         -jstack: A tool prints Java stack traces of Java threads
+         -jstat: Java Virtual Machine statistic monitoring tool
+         -keytool: A tool for manipulating the Keystore
+         -pack200: JAR compression tool
+         -Policytool: Utility that determines the Java runtime. That means it is a policy creation and management tool.
+         -VisualVM: It’s a visual tool. It is integrated with numerous command-line JDK tools.
+         -wsimport: It produces portable JAX-WS artifacts with an aim to invoke a web service
+         -xjc: It’s the part of the Java API boosting the XML Binding (JAXB) API
+
+
+
 What is IDE?
+    (Integrated Development Environment) IDE helps the programmers to write easily a code to implement
+    a computer program.
+
 What are the IDEs available in the market to support java?
+    They are : Eclipse, IntelliJ, NetBeans, JDeveloper, MyEclipse, BlueJ, JCreator, DrJava, jGRASP, JSource
+
 Explain the entire java life cycle.
+    There are 3 important steps
+        1-Java source code: writing the code
+        2-Java compiler: Compile the code, make the code readable by the machine
+        3-Java virtual machine: execute the code
+
 what is class?
+    A class is kind of an object constructor to build an object.
+
 What is object?
+    An object is the states of something.
+
 What is the entry point of an application?
+    The entry point in Java is the main method
+
 Why main is static?
+    Because the compiler needs something to start with. and for this the compiler will not create an object
+    or before an object inside the class is created.
+
 Which class is the superclass of all classes?
+    The class is Java.lang.Object
+
 What is difference between path and classpath variables?
+    Path is used by the machine to find the executables.
+    Classpath is used by the Java compiler to find the path.
+
 What is the difference between an Interface and Abstract class?
+    An Interface allow to define methods but you can not implement them.
+    An Interface allow to create  and implement methods or override them.
+
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+    you can not make object from an Interface nor an abstract class. However, you can implement an abstract class.
+    or extend an interface
+
+
 what is Access Specifier?
+    An access specifiers define how a method or a class can be accessed.
+    it can be public, private, protected or default.
+
 What is OOP ? Define each feature of java OOP.
+    Object Oriented Programming(OOP). It does means the language main focus is on objects. It is creating
+    objects that have methods and data.
+     A class is kind of an object constructor to build an object.
+     An object is the states of something.
+
 What is Java Package and which package is imported by default?
+    Java package is a collection of java interfaces and classes.
+    The package that is impoted by default is java.lang
+
 What is API? Name list of API that you have used so far.
+    Application Programming Interface (API) is the code that permit that 2 application can interact between each other.
+    The API that we used so far are :
+        * log in the account (gmail, amazon..etc)
+        * e-Commerce
+        * Booking
+
+
+
 Does java support multiple inheritance, explain why or why not?
+    Yes Java support multiple inheritance. It gives the ability that one class can implement more than one interface.
+
 What is method overloading and when it happens?
 Explain exceptions in java and how to handle it.
 What is static keyword in java? How it has been used in variables and methods ?
