@@ -22,6 +22,10 @@ public class Numbers {
         int[] num = new int[1000000];
         storeRandomNumbers(num);
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+            // print to show what is in the num list
+        for (int z=0;z< num.length;z++){
+            System.out.println(num[z]);
+        }
         //Selection Sort
         Sort algo = new Sort();
         algo.selectionSort(num);

@@ -301,9 +301,49 @@ what is multithreading in java?
     a process.
 
 What is the use of synchronization in Java?
+    Java provides a way of creating threads and synchronizing their task by using synchronized blocks. Synchronized
+    blocks in Java are marked with the synchronized keyword. A synchronized block in Java is synchronized on some
+    object. All synchronized blocks synchronized on the same object can only have one thread executing inside them
+    at a time. All other threads attempting to enter the synchronized block are blocked until the thread inside the
+    synchronized block exits the block.
+
+
 What is Framework?
+    Java™ frameworks are bodies of pre-written code used by developers to create apps using the Java programming
+    language. Java frameworks are specific to the Java programming language. It’s a Java platform for developing
+    software applications and Java programs.
+
 What are the testing Framework available in java?
+    1. JBehave
+    2. JUnit
+    3. Serenity
+    4. TestNG
+    5. Selenide
+    6. Gauge
+    7. Geb
+    8. Spock
+    9. HttpUnit
+    10. JWebUnit
+
 Difference between jUnit and testNG?
+    Both Testng and Junit are Testing framework used for Unit Testing. TestNG is similar to JUnit. Few more
+    functionalities are added to it that makes TestNG more powerful than JUnit.
+    This tutorial is mainly focused to analyse features of JUnit and TestNG. It help
+    developers to decide which framework should be used for Unit Testing. Let's analyse similarities between
+    TestNG and JUnit4 first.
+    TestNG is a testing framework inspired by JUnit and NUnit.
+
+
 What are the dependencies for this project?
+    they are in pom.xml
+
 what is dependency injection in java?
+    Dependency injection (DI) is the concept in which objects get other required objects from outside.
+    DI can be implemented in any programming language. The general concept behind dependency injection is
+    called Inversion of Control. A Java class has a dependency on another class, if it uses an instance of this class.
+
+
 What is static binding and dynamic binding?
+    In Java static binding refers to the execution of a program where type of object is determined/known at compile
+    time i.e when compiler executes the code it know the type of object or class to which object belongs.While in
+    case of dynamic binding the type of object is determined at runtime.
