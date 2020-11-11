@@ -20,9 +20,9 @@ public class FindLowestDifference {
         int tmp, tmp2;
         int finalResult = array1[0];
 
-        for (int i = 0; i < array1.length -1; i++) {
+        for (int i = 0; i < array1.length - 1; i++) {
             tmp = array1[i];
-            for (int j = 0; j < array1.length -1; j++) {
+            for (int j = 0; j < array1.length - 1; j++) {
                 //tmp = array1[j];
                 tmp2 = array1[j + 1];
                 int temp2;

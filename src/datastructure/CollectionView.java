@@ -18,7 +18,7 @@ public class CollectionView {
         System.out.println(
                 map
         );
-        for (int i=1; i< map.size();i++){
+        for (int i = 1; i < map.size(); i++) {
             System.out.println(map.get(i));
 
         }

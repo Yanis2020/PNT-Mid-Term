@@ -9,7 +9,7 @@ public interface Employee {
     //and then implement these in a concrete class.
 
     //employeeId() will return employee id.
-    int employeeId();
+    public int employeeId();
 
 
     //employeeName() will return employee name
