@@ -21,20 +21,22 @@ public class DetermineLargestWord {
         Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
         String tmp;
-        System.out.println(wordGiven);
-        char[] arrayA = wordGiven.toCharArray();
-        char[] arrayB = " ".toCharArray();
-        System.out.println(arrayA);
+        //System.out.println(wordGiven.substring(1));
+        char [] car = wordGiven.toCharArray();
+        System.out.println(car);
+        int i=0;
+     //   map.put(i, car);
+        int j=0;
+        map.put(j, wordGiven.substring(j));
+
+        System.out.println(map);
         //  int j=0;
-        while (arrayA != arrayB) {
-            int j = 1;
-            map.put(j, wordGiven);
-            j++;
-        }
-        //  for (int i =0; i< map.size();i++){
-        // map.get(i);
-        //    System.out.println(map.get(i));
+        //  while (arrayA != arrayB) {
+        //     int j = 1;
+        //     map.put(j, wordGiven);
+        //     j++;
         // }
+        //
         //implement
 
         return map;

@@ -335,7 +335,8 @@ Difference between jUnit and testNG?
 
 
 What are the dependencies for this project?
-    they are in pom.xml
+    they are in .gitignore
+    dependency-reduced-pom.xml
 
 what is dependency injection in java?
     Dependency injection (DI) is the concept in which objects get other required objects from outside.

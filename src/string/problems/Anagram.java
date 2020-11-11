@@ -9,10 +9,12 @@ public class Anagram {
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
         String a = "CAT";
         String b = "ACT";
-        CheckIfAnagram(a, b);
+
+        Anagram anagram= new Anagram();
+        anagram.CheckIfAnagram(a, b);
     }
 
-    public static void CheckIfAnagram(String a, String b) {
+    public  void CheckIfAnagram(String a, String b) {
         char[] arrayA = a.toCharArray();
         char[] arrayB = b.toCharArray();
         System.out.println(arrayA);

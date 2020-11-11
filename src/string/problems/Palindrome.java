@@ -8,6 +8,13 @@ public class Palindrome {
           Palindrome. So write java code to check if a given String is Palindrome or not.
          */
         String a = "MADAM";
+        Palindrome palindrome = new Palindrome();
+        palindrome.isPalindrom(a);
+
+
+    }
+        public void isPalindrom (String a){
+
         String b = "";
 
         char[] arrayA = a.toCharArray();
@@ -20,9 +27,9 @@ public class Palindrome {
 
 
         if (a.equalsIgnoreCase(b)) {
-            System.out.println("it is a palindrom");
+            System.out.println("it is a palindrome");
         } else {
-            System.out.println("It is not a palindrom");
+            System.out.println("It is not a palindrome");
         }
 
     }
