@@ -27,6 +27,7 @@ public class ConnectToSqlDB {
 
     public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
         Properties prop = loadProperties();
+        //we need to specify what database to connect to !
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
         String userName = prop.getProperty("MYSQLJDBC.userName");
