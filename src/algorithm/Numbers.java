@@ -41,8 +41,36 @@ public class Numbers {
         long insertionSortExecutionTime = algo.executionTime;
         System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
+        //Bubble sort
+        algo.bubbleSort(num);
+        long bubbleSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
         //By following above, Continue for rest of the Sorting Algorithm....
 
+        //Merge sort
+        algo.mergeSort(num);
+        long mergeSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+
+        //Quick sort
+        algo.quickSort(num, 1,100);
+        long quickSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+
+        //Heap sort
+        algo.heapSort(num);
+        long heapSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+
+        //Bucket sort
+        algo.bucketSort(num,1000);
+        long bucketSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+
+        //Shell sort
+        algo.shellSort(num);
+        long shellSortExecutionTime = algo.executionTime;
+        System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
         //Come to conclusion about which Sorting Algo is better in given data set.
 
     }

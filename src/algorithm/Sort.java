@@ -82,30 +82,123 @@ public class Sort {
         return list;
     }
 
-    public int[] quickSort(int[] array) {
+    public int[] quickSort(int[] array, int begin, int end) {
         int[] list = array;
         //implement here
+        int pivot = array[end];
+        int i = (begin - 1);
+
+        for (int j = begin; j < end; j++) {
+            if (array[j] <= pivot) {
+                i++;
+
+                int swapTemp = array[i];
+                array[i] = array[j];
+                array[j] = swapTemp;
+            }
+        }
+
+        int swapTemp = array[i + 1];
+        array[i + 1] = array[end];
+        array[end] = swapTemp;
+
 
         return list;
     }
 
     public int[] heapSort(int[] array) {
-        int[] list = array;
-        //implement here
 
-        return list;
+        //implement here
+        int n = array.length;
+
+
+        for (int i = n / 2 - 1; i >= 0; i--)
+            heapify(array, n, i);
+
+
+        for (int i = n - 1; i > 0; i--) {
+            int temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
+
+
+            heapify(array, i, 0);
+        }
+        return array;
     }
 
-    public int[] bucketSort(int[] array) {
+
+    void heapify(int array[], int n, int i) {
+        int[] list = array;
+        int largest = i;
+        int l = 2 * i + 1;
+        int r = 2 * i + 2;
+
+
+        if (l < n && array[l] > array[largest])
+            largest = l;
+
+
+        if (r < n && array[r] > array[largest])
+            largest = r;
+
+
+        if (largest != i) {
+            int swap = array[i];
+            array[i] = array[largest];
+            array[largest] = swap;
+
+
+            heapify(array, n, largest);
+        }
+
+    }
+
+    public int[] bucketSort(int[] array, int MaxVal) {
         int[] list = array;
         //implement here
+        list = new int[MaxVal + 1];
+        int[] sortedNums = new int[array.length];
+        for (int i = 0; i < array.length; i++)
+            list[array[i]]++;
+        int outPos = 0;
+        for (int i = 0; i < list.length; i++)
+            for (int j = 0; j < list[i]; j++)
+                sortedNums[outPos++] = i;
+        return sortedNums;
+    }
 
-        return list;
+    static int[] max_value(int[] array) {
+        int max_value = 0;
+        for (int i = 0; i < array.length; i++)
+            if (array[i] > max_value)
+                max_value = array[i];
+
+        return array;
     }
 
     public int[] shellSort(int[] array) {
         int[] list = array;
         //implement here
+        int n = array.length;
+
+
+        for (int gap = n / 2; gap > 0; gap /= 2) {
+
+            for (int i = gap; i < n; i += 1) {
+
+                int temp = array[i];
+
+
+                int j;
+                for (j = i; j >= gap && array[j - gap] > temp; j -= gap)
+                    array[j] = array[j - gap];
+
+
+                array[j] = temp;
+            }
+        }
+
 
         return list;
     }
